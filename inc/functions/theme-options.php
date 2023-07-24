@@ -1951,13 +1951,13 @@ add_action('acf/init', 'my_acf_add_local_field_groups');
 
 function adobe_google(){
 
-	if( get_field('typekit', 'option') ): ?>
-		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit', 'option'); ?>.css">
+	if( get_field('field_63d27fd387106', 'option') ): ?>
+		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('field_63d27fd387106', 'option'); ?>.css">
 		<script type="text/javascript">console.log('typekit')</script>
 	<?php endif; ?>
 
-	<?php if( get_field('google_font', 'option') ): ?>
-		<?php the_field('google_font', 'option'); ?>
+	<?php if( get_field('field_63d27efc87105', 'option') ): ?>
+		<?php the_field('field_63d27efc87105', 'option'); ?>
 		<script type="text/javascript">console.log('google-font')</script>
 	<?php endif; 
 

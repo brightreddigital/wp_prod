@@ -1946,3 +1946,23 @@ endif;
 }
 
 add_action('acf/init', 'my_acf_add_local_field_groups');
+
+
+
+function adobe_google(){
+
+	if( get_field('typekit', 'option') ): ?>
+		<link rel="stylesheet" href="https://use.typekit.net/<?php the_field('typekit', 'option'); ?>.css">
+		<script type="text/javascript">console.log('typekit')</script>
+	<?php endif; ?>
+
+	<?php if( get_field('google_font', 'option') ): ?>
+		<?php the_field('google_font', 'option'); ?>
+		<script type="text/javascript">console.log('google-font')</script>
+	<?php endif; 
+
+};
+
+add_action('wp_head', 'adobe_google');
+
+

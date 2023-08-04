@@ -11,7 +11,6 @@ p:last-of-type {
 }
 
 p {
-	color: var(--body-colour);
 	font-family: var(--body-font);
 	font-weight: var(--body-weight);
 	line-height: 1.5em;
@@ -25,15 +24,9 @@ a:not(#wpadminbar a){
 a, a:visited, .icon-text-inline {
 	font-weight: var(--link-weight);
 	font-style: var(--link-style);
-	color: var(--link-colour);
-}
-
-a:hover, .icon-text-inline:hover {
-	color: var(--link-hover-colour);
 }
 
 h1 {
-	color: var(--h1-colour);
 	font-family: var(--h1-font) ;
 	font-weight: var(--h1-weight);
 	font-style: var(--h1-style);
@@ -42,7 +35,6 @@ h1 {
 }
 
 h2 {
-	color: var(--h2-colour);
 	font-family: var(--h2-font) ;
 	font-weight: var(--h2-weight) ;
 	font-style: var(--h2-style);
@@ -51,7 +43,6 @@ h2 {
 }
 
 h3 {
-	color: var(--h3-colour);
 	font-family: var(--h3-font) ;
 	font-weight: var(--h3-weight) ;
 	font-style: var(--h3-style);
@@ -59,7 +50,6 @@ h3 {
 }
 
 h4 {
-	color: var(--h4-colour);
 	font-family: var(--h4-font) ;
 	font-weight: var(--h4-weight) ;
 	font-style: var(--h4-style);
@@ -67,7 +57,6 @@ h4 {
 }
 
 h5 {
-	color: var(--h5-colour);
 	font-family: var(--h5-font) ;
 	font-weight: var(--h5-weight);
 	font-style: var(--h5-style);
@@ -75,7 +64,6 @@ h5 {
 }
 
 h6 {
-	color: var(--h6-colour);
 	font-family: var(--h6-font);
 	font-weight: var(--h6-weight);
 	font-style: var(--h6-style);
@@ -108,4 +96,40 @@ h6 {
 	h6 {
 		font-size: var(--h6-size-d);
 	}
+}
+
+.user-content p {
+	color: var(--body-colour);
+}
+
+.user-content a, .user-content a:visited, .icon-text-inline {
+	color: var(--link-colour);
+}
+
+.user-content a:hover, .icon-text-inline:hover {
+	color: var(--link-hover-colour);
+}
+
+.user-content h1 {
+	color: var(--h1-colour);
+}
+
+.user-content h2 {
+	color: var(--h2-colour);
+}
+
+.user-content h3 {
+	color: var(--h3-colour);
+}
+
+.user-content h4 {
+	color: var(--h4-colour);
+}
+
+.user-content h5 {
+	color: var(--h5-colour);
+}
+
+.user-content h6 {
+	color: var(--h6-colour);
 }

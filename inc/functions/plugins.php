@@ -61,6 +61,12 @@ function register_required_plugins() {
 			'required'  => true,
 		),
 
+		array(
+			'name'      => 'Cookie Notice & Compliance for GDPR / CCPA',
+			'slug'      => 'cookie-notice',
+			'required'  => true,
+		),
+
 	);
 
 	$config = array(

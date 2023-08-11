@@ -98,38 +98,38 @@ h6 {
 	}
 }
 
-.user-content p {
+.user-content p, .elementor-widget-text-editor p {
 	color: var(--body-colour);
 }
 
-.user-content a, .user-content a:visited, .icon-text-inline {
+.user-content a, .elementor-widget-text-editor a, .user-content a:visited, .elementor-widget-text-editor a:visited, .icon-text-inline {
 	color: var(--link-colour);
 }
 
-.user-content a:hover, .icon-text-inline:hover {
+.user-content a:hover, .elementor-widget-text-editor a:hover, .icon-text-inline:hover {
 	color: var(--link-hover-colour);
 }
 
-.user-content h1 {
+.user-content h1, .elementor-widget-text-editor h1 {
 	color: var(--h1-colour);
 }
 
-.user-content h2 {
+.user-content h2, .elementor-widget-text-editor h2 {
 	color: var(--h2-colour);
 }
 
-.user-content h3 {
+.user-content h3, .elementor-widget-text-editor h3 {
 	color: var(--h3-colour);
 }
 
-.user-content h4 {
+.user-content h4, .elementor-widget-text-editor h5 {
 	color: var(--h4-colour);
 }
 
-.user-content h5 {
+.user-content h5, .elementor-widget-text-editor h5 {
 	color: var(--h5-colour);
 }
 
-.user-content h6 {
+.user-content h6, .elementor-widget-text-editor h6 {
 	color: var(--h6-colour);
 }

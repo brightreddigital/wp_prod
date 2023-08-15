@@ -168,37 +168,6 @@ function checkACFsc() {
 
 	add_shortcode('repeater_list', 'repeater_list');
 
-	// Add class name to shortcode for loop and custom CSS eg [repeater_list_two class="credits"]
-
-	function repeater_list_two($attributes) {
-
-		$args = shortcode_atts(array(
-			'class' => '',
-	    ), $attributes);
-
- 
-		if( have_rows($args['class']) ) { ?>
-
-			<ul class="repeater-list <?php $args['class']; ?>">
-    
-    		<?php while( have_rows($args['class']) ): $row = the_row();
-        		
-        		if( $subfields = get_row() ) {
-            		
-            		foreach ($subfields as $name => $value) {
-                		
-                		$field = get_sub_field_object( $name ); ?>
-                		
-                    		<li><?php echo $value; ?></li>
-
-		            	<?php }
-		        } ?>
-
-		    </ul>
-
-		<?php } endif; };
-
-		add_shortcode('repeater_list_two', 'repeater_list_two');
 
 /* Check ACF END */ 
 };
